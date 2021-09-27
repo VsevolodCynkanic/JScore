@@ -119,5 +119,22 @@ namespace JCounter
         {
             Application.Exit();
         }
+
+        private void homePicture2_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Hide();
+                StartPage startPage = new StartPage();
+                startPage.Show();
+            }
+        }
+        // DOES NOT WORK
+
+        //private void pictureBox1_Move(object sender, EventArgs e)
+        //{
+        //    ToolTip t = new ToolTip();
+        //    t.SetToolTip(pictureBox1, "Home");
+        //}
     }
 }

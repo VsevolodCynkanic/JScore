@@ -73,5 +73,10 @@ namespace JCounter
             NamingForm namingForm = new NamingForm();
             namingForm.Show();
         }
+
+        private void StartPage_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -56,20 +56,20 @@ namespace JCounter
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(199, 210);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 25);
+            this.label1.Size = new System.Drawing.Size(143, 25);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Choose the type of game";
+            this.label1.Text = "Type of game";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(40, 297);
+            this.label2.Location = new System.Drawing.Point(199, 297);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(411, 25);
+            this.label2.Size = new System.Drawing.Size(175, 25);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Choose the number of teams/ participants";
+            this.label2.Text = "Number of teams";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // NumberOfTeams
@@ -115,7 +115,7 @@ namespace JCounter
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(213)))), ((int)(((byte)(200)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(902, 482);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonFirstPage);
@@ -123,8 +123,10 @@ namespace JCounter
             this.Controls.Add(this.NumberOfTeams);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TypeOfGame);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "StartPage";
-            this.Text = "Form1";
+            this.Text = "JScore";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StartPage_FormClosing);
             this.Load += new System.EventHandler(this.StartPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

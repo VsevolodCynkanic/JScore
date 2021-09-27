@@ -19,6 +19,15 @@ namespace JCounter
             team2Counter.Text = team2name;
             team3Counter.Text = team3name;
             team4Counter.Text = team4name;
+            //if (points100.Checked)
+            //{
+            //    points100.ForeColor = Color.Gold;
+            //}
+            //if(points200.Checked)
+            //{
+            //    points200.ForeColor = Color.Gold;
+            //    points100.Checked = false;
+            //}
         }
         int point100 = 100;
         int point200 = 200;
@@ -75,28 +84,28 @@ namespace JCounter
                 points100.Checked = false;
                 points200.Checked = true;
             }
-            else if(points200.Checked)
+            else if (points200.Checked)
             {
                 points[1] += point200;
                 team2Score.Text = points[1].ToString();
                 points200.Checked = false;
                 points300.Checked = true;
             }
-            else if(points300.Checked)
+            else if (points300.Checked)
             {
                 points[1] += point300;
                 team2Score.Text = points[1].ToString();
                 points300.Checked = false;
                 points400.Checked = true;
             }
-            else if(points400.Checked)
+            else if (points400.Checked)
             {
                 points[1] += point400;
                 team2Score.Text = points[1].ToString();
                 points400.Checked = false;
                 points500.Checked = true;
             }
-            else if(points500.Checked)
+            else if (points500.Checked)
             {
                 points[1] += point500;
                 team2Score.Text = points[1].ToString();
@@ -310,6 +319,28 @@ namespace JCounter
             {
                 e.Cancel = true;
             }
+        }
+
+        private void homePicture3_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Hide();
+                StartPage startPage = new StartPage();
+                startPage.Show();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            points[0] = 0;
+            team1Score.Text = points[0].ToString();
+            points[1] = 0;
+            team2Score.Text = points[1].ToString();
+            points[2] = 0; 
+            team3Score.Text = points[2].ToString();
+            points[3] = 0;
+            team4Score.Text = points[3].ToString();
         }
     }
 }

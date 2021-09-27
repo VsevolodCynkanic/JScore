@@ -39,12 +39,15 @@ namespace JCounter
             this.team3NameField = new System.Windows.Forms.TextBox();
             this.team2NameField = new System.Windows.Forms.TextBox();
             this.buttonSecondPage = new System.Windows.Forms.Button();
+            this.homePicture2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.homePicture2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(66, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(663, 46);
@@ -55,7 +58,7 @@ namespace JCounter
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Red;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(229, 134);
@@ -67,7 +70,7 @@ namespace JCounter
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Green;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(96)))), ((int)(((byte)(46)))));
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(229, 188);
@@ -79,7 +82,7 @@ namespace JCounter
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Yellow;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(196)))), ((int)(((byte)(23)))));
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.Location = new System.Drawing.Point(229, 240);
@@ -91,7 +94,7 @@ namespace JCounter
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Blue;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(123)))), ((int)(((byte)(194)))));
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.Location = new System.Drawing.Point(229, 292);
@@ -153,12 +156,25 @@ namespace JCounter
             this.buttonSecondPage.UseVisualStyleBackColor = true;
             this.buttonSecondPage.Click += new System.EventHandler(this.buttonSecondPage_Click);
             // 
+            // homePicture2
+            // 
+            this.homePicture2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.homePicture2.Image = global::JCounter.Properties.Resources.home;
+            this.homePicture2.Location = new System.Drawing.Point(12, 12);
+            this.homePicture2.Name = "homePicture2";
+            this.homePicture2.Size = new System.Drawing.Size(33, 34);
+            this.homePicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.homePicture2.TabIndex = 6;
+            this.homePicture2.TabStop = false;
+            this.homePicture2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homePicture2_MouseClick);
+            // 
             // NamingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(213)))), ((int)(((byte)(200)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.homePicture2);
             this.Controls.Add(this.buttonSecondPage);
             this.Controls.Add(this.team2NameField);
             this.Controls.Add(this.team3NameField);
@@ -170,8 +186,9 @@ namespace JCounter
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "NamingForm";
-            this.Text = "NamingForm";
+            this.Text = "JScore";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NamingForm_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.homePicture2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,5 +206,6 @@ namespace JCounter
         private System.Windows.Forms.TextBox team3NameField;
         private System.Windows.Forms.TextBox team2NameField;
         private System.Windows.Forms.Button buttonSecondPage;
+        private System.Windows.Forms.PictureBox homePicture2;
     }
 }
