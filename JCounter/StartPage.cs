@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +13,21 @@ namespace JCounter
 {
     public partial class StartPage : Form
     {
+        Font cocoFat;
+        Font cocoAlt;
+
         public StartPage()
         {
             InitializeComponent();
+        }
+        private void LoadFont()
+        {
+            PrivateFontCollection custom_font_cocofat = new PrivateFontCollection();
+            PrivateFontCollection custom_font_cocoalternative = new PrivateFontCollection();
+            custom_font_cocofat.AddFontFile("coco-gothic.fat");
+            custom_font_cocoalternative.AddFontFile("CocoGothicAlternative");
+            cocoFat = new Font(custom_font_cocofat.Families[0], 18);
+            cocoAlt = new Font(custom_font_cocoalternative.Families[1], 10);
         }
 
         private void JCounter_TextChanged(object sender, EventArgs e)

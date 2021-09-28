@@ -129,6 +129,11 @@ namespace JCounter
                 startPage.Show();
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
         // DOES NOT WORK
 
         //private void pictureBox1_Move(object sender, EventArgs e)

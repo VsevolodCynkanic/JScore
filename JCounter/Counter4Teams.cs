@@ -331,16 +331,29 @@ namespace JCounter
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void unlockPicture_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left && pointsPanel.Enabled == true)
+            {
+                pointsPanel.Enabled = false;
+            }
+            else if (pointsPanel.Enabled == false)
+            {
+                pointsPanel.Enabled = true;
+            }
+        }
+
+        private void resetButton_Click(object sender, EventArgs e)
         {
             points[0] = 0;
             team1Score.Text = points[0].ToString();
             points[1] = 0;
             team2Score.Text = points[1].ToString();
-            points[2] = 0; 
+            points[2] = 0;
             team3Score.Text = points[2].ToString();
             points[3] = 0;
             team4Score.Text = points[3].ToString();
+            points100.Checked = true;
         }
     }
 }

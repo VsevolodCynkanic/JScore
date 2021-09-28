@@ -29,6 +29,7 @@ namespace JCounter
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Counter4Teams));
             this.team1Counter = new System.Windows.Forms.Label();
             this.team2Counter = new System.Windows.Forms.Label();
             this.team3Counter = new System.Windows.Forms.Label();
@@ -51,59 +52,65 @@ namespace JCounter
             this.points400 = new System.Windows.Forms.RadioButton();
             this.points500 = new System.Windows.Forms.RadioButton();
             this.homePicture3 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.resetButton = new System.Windows.Forms.Button();
             this.pointsPanel = new System.Windows.Forms.GroupBox();
+            this.logoStartPage = new System.Windows.Forms.PictureBox();
+            this.round2Button = new System.Windows.Forms.Button();
+            this.unlockPicture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.homePicture3)).BeginInit();
             this.pointsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoStartPage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unlockPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // team1Counter
             // 
             this.team1Counter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.team1Counter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.team1Counter.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.team1Counter.Location = new System.Drawing.Point(53, 107);
+            this.team1Counter.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.team1Counter.ForeColor = System.Drawing.Color.White;
+            this.team1Counter.Location = new System.Drawing.Point(70, 220);
             this.team1Counter.Margin = new System.Windows.Forms.Padding(0);
             this.team1Counter.Name = "team1Counter";
             this.team1Counter.Size = new System.Drawing.Size(300, 100);
             this.team1Counter.TabIndex = 0;
-            this.team1Counter.Text = "Team 1";
+            this.team1Counter.Text = "TEAM 1";
             this.team1Counter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // team2Counter
             // 
             this.team2Counter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(96)))), ((int)(((byte)(46)))));
-            this.team2Counter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.team2Counter.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.team2Counter.Location = new System.Drawing.Point(401, 107);
+            this.team2Counter.Font = new System.Drawing.Font("Tahoma", 24F);
+            this.team2Counter.ForeColor = System.Drawing.Color.White;
+            this.team2Counter.Location = new System.Drawing.Point(440, 220);
+            this.team2Counter.Margin = new System.Windows.Forms.Padding(0);
             this.team2Counter.Name = "team2Counter";
             this.team2Counter.Size = new System.Drawing.Size(300, 100);
             this.team2Counter.TabIndex = 1;
-            this.team2Counter.Text = "Team 2";
+            this.team2Counter.Text = "TEAM 2";
             this.team2Counter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // team3Counter
             // 
             this.team3Counter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(196)))), ((int)(((byte)(23)))));
-            this.team3Counter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.team3Counter.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.team3Counter.Location = new System.Drawing.Point(742, 107);
+            this.team3Counter.Font = new System.Drawing.Font("Tahoma", 24F);
+            this.team3Counter.ForeColor = System.Drawing.Color.White;
+            this.team3Counter.Location = new System.Drawing.Point(810, 220);
             this.team3Counter.Name = "team3Counter";
             this.team3Counter.Size = new System.Drawing.Size(300, 100);
             this.team3Counter.TabIndex = 2;
-            this.team3Counter.Text = "Team 3";
+            this.team3Counter.Text = "TEAM 3";
             this.team3Counter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // team4Counter
             // 
             this.team4Counter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(123)))), ((int)(((byte)(194)))));
-            this.team4Counter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.team4Counter.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.team4Counter.Location = new System.Drawing.Point(1092, 107);
+            this.team4Counter.Font = new System.Drawing.Font("Tahoma", 24F);
+            this.team4Counter.ForeColor = System.Drawing.Color.White;
+            this.team4Counter.Location = new System.Drawing.Point(1180, 220);
             this.team4Counter.Name = "team4Counter";
             this.team4Counter.Size = new System.Drawing.Size(300, 100);
             this.team4Counter.TabIndex = 3;
-            this.team4Counter.Text = "Team 4";
+            this.team4Counter.Text = "TEAM 4";
             this.team4Counter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // plusTeam10
@@ -112,12 +119,12 @@ namespace JCounter
             this.plusTeam10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.plusTeam10.FlatAppearance.BorderSize = 0;
             this.plusTeam10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.plusTeam10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.plusTeam10.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
             this.plusTeam10.ForeColor = System.Drawing.Color.White;
-            this.plusTeam10.Location = new System.Drawing.Point(53, 207);
+            this.plusTeam10.Location = new System.Drawing.Point(160, 370);
             this.plusTeam10.Margin = new System.Windows.Forms.Padding(0);
             this.plusTeam10.Name = "plusTeam10";
-            this.plusTeam10.Size = new System.Drawing.Size(150, 66);
+            this.plusTeam10.Size = new System.Drawing.Size(60, 60);
             this.plusTeam10.TabIndex = 4;
             this.plusTeam10.Text = "+";
             this.plusTeam10.UseVisualStyleBackColor = false;
@@ -129,12 +136,12 @@ namespace JCounter
             this.minusTeam1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.minusTeam1.FlatAppearance.BorderSize = 0;
             this.minusTeam1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.minusTeam1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.minusTeam1.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
             this.minusTeam1.ForeColor = System.Drawing.Color.White;
-            this.minusTeam1.Location = new System.Drawing.Point(203, 207);
+            this.minusTeam1.Location = new System.Drawing.Point(220, 370);
             this.minusTeam1.Margin = new System.Windows.Forms.Padding(0);
             this.minusTeam1.Name = "minusTeam1";
-            this.minusTeam1.Size = new System.Drawing.Size(150, 66);
+            this.minusTeam1.Size = new System.Drawing.Size(60, 60);
             this.minusTeam1.TabIndex = 5;
             this.minusTeam1.Text = "-";
             this.minusTeam1.UseVisualStyleBackColor = false;
@@ -144,13 +151,14 @@ namespace JCounter
             // 
             this.minusTeam2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.minusTeam2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minusTeam2.FlatAppearance.BorderSize = 0;
             this.minusTeam2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.minusTeam2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.minusTeam2.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
             this.minusTeam2.ForeColor = System.Drawing.Color.White;
-            this.minusTeam2.Location = new System.Drawing.Point(551, 207);
+            this.minusTeam2.Location = new System.Drawing.Point(590, 370);
             this.minusTeam2.Margin = new System.Windows.Forms.Padding(0);
             this.minusTeam2.Name = "minusTeam2";
-            this.minusTeam2.Size = new System.Drawing.Size(150, 66);
+            this.minusTeam2.Size = new System.Drawing.Size(60, 60);
             this.minusTeam2.TabIndex = 7;
             this.minusTeam2.Text = "-";
             this.minusTeam2.UseVisualStyleBackColor = false;
@@ -162,12 +170,12 @@ namespace JCounter
             this.plusTeam2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.plusTeam2.FlatAppearance.BorderSize = 0;
             this.plusTeam2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.plusTeam2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.plusTeam2.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
             this.plusTeam2.ForeColor = System.Drawing.Color.White;
-            this.plusTeam2.Location = new System.Drawing.Point(401, 207);
+            this.plusTeam2.Location = new System.Drawing.Point(530, 370);
             this.plusTeam2.Margin = new System.Windows.Forms.Padding(0);
             this.plusTeam2.Name = "plusTeam2";
-            this.plusTeam2.Size = new System.Drawing.Size(150, 66);
+            this.plusTeam2.Size = new System.Drawing.Size(60, 60);
             this.plusTeam2.TabIndex = 6;
             this.plusTeam2.Text = "+";
             this.plusTeam2.UseVisualStyleBackColor = false;
@@ -177,13 +185,14 @@ namespace JCounter
             // 
             this.minusTeam3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.minusTeam3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minusTeam3.FlatAppearance.BorderSize = 0;
             this.minusTeam3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.minusTeam3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.minusTeam3.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
             this.minusTeam3.ForeColor = System.Drawing.Color.White;
-            this.minusTeam3.Location = new System.Drawing.Point(892, 207);
+            this.minusTeam3.Location = new System.Drawing.Point(960, 370);
             this.minusTeam3.Margin = new System.Windows.Forms.Padding(0);
             this.minusTeam3.Name = "minusTeam3";
-            this.minusTeam3.Size = new System.Drawing.Size(150, 66);
+            this.minusTeam3.Size = new System.Drawing.Size(60, 60);
             this.minusTeam3.TabIndex = 9;
             this.minusTeam3.Text = "-";
             this.minusTeam3.UseVisualStyleBackColor = false;
@@ -195,12 +204,12 @@ namespace JCounter
             this.plusTeam3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.plusTeam3.FlatAppearance.BorderSize = 0;
             this.plusTeam3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.plusTeam3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.plusTeam3.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
             this.plusTeam3.ForeColor = System.Drawing.Color.White;
-            this.plusTeam3.Location = new System.Drawing.Point(742, 207);
+            this.plusTeam3.Location = new System.Drawing.Point(900, 370);
             this.plusTeam3.Margin = new System.Windows.Forms.Padding(0);
             this.plusTeam3.Name = "plusTeam3";
-            this.plusTeam3.Size = new System.Drawing.Size(150, 66);
+            this.plusTeam3.Size = new System.Drawing.Size(60, 60);
             this.plusTeam3.TabIndex = 8;
             this.plusTeam3.Text = "+";
             this.plusTeam3.UseVisualStyleBackColor = false;
@@ -211,12 +220,12 @@ namespace JCounter
             this.minusTeam4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.minusTeam4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.minusTeam4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.minusTeam4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.minusTeam4.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
             this.minusTeam4.ForeColor = System.Drawing.Color.White;
-            this.minusTeam4.Location = new System.Drawing.Point(1242, 207);
+            this.minusTeam4.Location = new System.Drawing.Point(1330, 370);
             this.minusTeam4.Margin = new System.Windows.Forms.Padding(0);
             this.minusTeam4.Name = "minusTeam4";
-            this.minusTeam4.Size = new System.Drawing.Size(150, 66);
+            this.minusTeam4.Size = new System.Drawing.Size(60, 60);
             this.minusTeam4.TabIndex = 11;
             this.minusTeam4.Text = "-";
             this.minusTeam4.UseVisualStyleBackColor = false;
@@ -228,12 +237,12 @@ namespace JCounter
             this.plusTeam4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.plusTeam4.FlatAppearance.BorderSize = 0;
             this.plusTeam4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.plusTeam4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.plusTeam4.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
             this.plusTeam4.ForeColor = System.Drawing.Color.White;
-            this.plusTeam4.Location = new System.Drawing.Point(1092, 207);
+            this.plusTeam4.Location = new System.Drawing.Point(1270, 370);
             this.plusTeam4.Margin = new System.Windows.Forms.Padding(0);
             this.plusTeam4.Name = "plusTeam4";
-            this.plusTeam4.Size = new System.Drawing.Size(150, 66);
+            this.plusTeam4.Size = new System.Drawing.Size(60, 60);
             this.plusTeam4.TabIndex = 10;
             this.plusTeam4.Text = "+";
             this.plusTeam4.UseVisualStyleBackColor = false;
@@ -242,11 +251,11 @@ namespace JCounter
             // team1Score
             // 
             this.team1Score.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(152)))), ((int)(((byte)(158)))));
-            this.team1Score.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.team1Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.team1Score.Location = new System.Drawing.Point(154, 74);
+            this.team1Score.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.team1Score.ForeColor = System.Drawing.Color.White;
+            this.team1Score.Location = new System.Drawing.Point(110, 320);
             this.team1Score.Name = "team1Score";
-            this.team1Score.Size = new System.Drawing.Size(96, 33);
+            this.team1Score.Size = new System.Drawing.Size(220, 50);
             this.team1Score.TabIndex = 12;
             this.team1Score.Text = "0";
             this.team1Score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -254,11 +263,11 @@ namespace JCounter
             // team2Score
             // 
             this.team2Score.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(152)))), ((int)(((byte)(158)))));
-            this.team2Score.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.team2Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.team2Score.Location = new System.Drawing.Point(505, 74);
+            this.team2Score.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
+            this.team2Score.ForeColor = System.Drawing.Color.White;
+            this.team2Score.Location = new System.Drawing.Point(480, 320);
             this.team2Score.Name = "team2Score";
-            this.team2Score.Size = new System.Drawing.Size(96, 33);
+            this.team2Score.Size = new System.Drawing.Size(220, 50);
             this.team2Score.TabIndex = 13;
             this.team2Score.Text = "0";
             this.team2Score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -266,11 +275,11 @@ namespace JCounter
             // team3Score
             // 
             this.team3Score.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(152)))), ((int)(((byte)(158)))));
-            this.team3Score.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.team3Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.team3Score.Location = new System.Drawing.Point(844, 74);
+            this.team3Score.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
+            this.team3Score.ForeColor = System.Drawing.Color.White;
+            this.team3Score.Location = new System.Drawing.Point(850, 320);
             this.team3Score.Name = "team3Score";
-            this.team3Score.Size = new System.Drawing.Size(96, 33);
+            this.team3Score.Size = new System.Drawing.Size(220, 50);
             this.team3Score.TabIndex = 14;
             this.team3Score.Text = "0";
             this.team3Score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -278,11 +287,11 @@ namespace JCounter
             // team4Score
             // 
             this.team4Score.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(152)))), ((int)(((byte)(158)))));
-            this.team4Score.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.team4Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.team4Score.Location = new System.Drawing.Point(1188, 74);
+            this.team4Score.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
+            this.team4Score.ForeColor = System.Drawing.Color.White;
+            this.team4Score.Location = new System.Drawing.Point(1220, 320);
             this.team4Score.Name = "team4Score";
-            this.team4Score.Size = new System.Drawing.Size(96, 33);
+            this.team4Score.Size = new System.Drawing.Size(220, 50);
             this.team4Score.TabIndex = 15;
             this.team4Score.Text = "0";
             this.team4Score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -291,11 +300,11 @@ namespace JCounter
             // 
             this.points100.AutoSize = true;
             this.points100.Checked = true;
-            this.points100.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.points100.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
             this.points100.ForeColor = System.Drawing.Color.White;
             this.points100.Location = new System.Drawing.Point(34, 19);
             this.points100.Name = "points100";
-            this.points100.Size = new System.Drawing.Size(84, 40);
+            this.points100.Size = new System.Drawing.Size(87, 39);
             this.points100.TabIndex = 16;
             this.points100.TabStop = true;
             this.points100.Text = "100";
@@ -304,11 +313,11 @@ namespace JCounter
             // points200
             // 
             this.points200.AutoSize = true;
-            this.points200.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.points200.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
             this.points200.ForeColor = System.Drawing.Color.White;
             this.points200.Location = new System.Drawing.Point(34, 65);
             this.points200.Name = "points200";
-            this.points200.Size = new System.Drawing.Size(84, 40);
+            this.points200.Size = new System.Drawing.Size(87, 39);
             this.points200.TabIndex = 17;
             this.points200.Text = "200";
             this.points200.UseVisualStyleBackColor = true;
@@ -316,11 +325,11 @@ namespace JCounter
             // points300
             // 
             this.points300.AutoSize = true;
-            this.points300.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.points300.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
             this.points300.ForeColor = System.Drawing.Color.White;
             this.points300.Location = new System.Drawing.Point(34, 111);
             this.points300.Name = "points300";
-            this.points300.Size = new System.Drawing.Size(84, 40);
+            this.points300.Size = new System.Drawing.Size(87, 39);
             this.points300.TabIndex = 18;
             this.points300.Text = "300";
             this.points300.UseVisualStyleBackColor = true;
@@ -328,11 +337,11 @@ namespace JCounter
             // points400
             // 
             this.points400.AutoSize = true;
-            this.points400.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.points400.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
             this.points400.ForeColor = System.Drawing.Color.White;
             this.points400.Location = new System.Drawing.Point(34, 157);
             this.points400.Name = "points400";
-            this.points400.Size = new System.Drawing.Size(84, 40);
+            this.points400.Size = new System.Drawing.Size(87, 39);
             this.points400.TabIndex = 19;
             this.points400.Text = "400";
             this.points400.UseVisualStyleBackColor = true;
@@ -340,11 +349,11 @@ namespace JCounter
             // points500
             // 
             this.points500.AutoSize = true;
-            this.points500.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.points500.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
             this.points500.ForeColor = System.Drawing.Color.White;
             this.points500.Location = new System.Drawing.Point(34, 203);
             this.points500.Name = "points500";
-            this.points500.Size = new System.Drawing.Size(84, 40);
+            this.points500.Size = new System.Drawing.Size(87, 39);
             this.points500.TabIndex = 20;
             this.points500.Text = "500";
             this.points500.UseVisualStyleBackColor = true;
@@ -353,7 +362,7 @@ namespace JCounter
             // 
             this.homePicture3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.homePicture3.Image = global::JCounter.Properties.Resources.home;
-            this.homePicture3.Location = new System.Drawing.Point(12, 12);
+            this.homePicture3.Location = new System.Drawing.Point(22, 22);
             this.homePicture3.Name = "homePicture3";
             this.homePicture3.Size = new System.Drawing.Size(33, 34);
             this.homePicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -361,16 +370,20 @@ namespace JCounter
             this.homePicture3.TabStop = false;
             this.homePicture3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homePicture3_MouseClick);
             // 
-            // button1
+            // resetButton
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(973, 367);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 46);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "RESET";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.resetButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(152)))), ((int)(((byte)(158)))));
+            this.resetButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.resetButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.resetButton.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
+            this.resetButton.ForeColor = System.Drawing.Color.White;
+            this.resetButton.Location = new System.Drawing.Point(900, 666);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(170, 45);
+            this.resetButton.TabIndex = 22;
+            this.resetButton.Text = "RESET";
+            this.resetButton.UseVisualStyleBackColor = false;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
             // pointsPanel
             // 
@@ -379,20 +392,60 @@ namespace JCounter
             this.pointsPanel.Controls.Add(this.points300);
             this.pointsPanel.Controls.Add(this.points500);
             this.pointsPanel.Controls.Add(this.points400);
-            this.pointsPanel.Location = new System.Drawing.Point(401, 344);
+            this.pointsPanel.ForeColor = System.Drawing.Color.White;
+            this.pointsPanel.Location = new System.Drawing.Point(576, 514);
             this.pointsPanel.Name = "pointsPanel";
             this.pointsPanel.Size = new System.Drawing.Size(150, 263);
             this.pointsPanel.TabIndex = 23;
             this.pointsPanel.TabStop = false;
+            // 
+            // logoStartPage
+            // 
+            this.logoStartPage.Image = global::JCounter.Properties.Resources.applogo;
+            this.logoStartPage.Location = new System.Drawing.Point(695, 40);
+            this.logoStartPage.Name = "logoStartPage";
+            this.logoStartPage.Size = new System.Drawing.Size(160, 160);
+            this.logoStartPage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logoStartPage.TabIndex = 24;
+            this.logoStartPage.TabStop = false;
+            // 
+            // round2Button
+            // 
+            this.round2Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(152)))), ((int)(((byte)(158)))));
+            this.round2Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.round2Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.round2Button.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
+            this.round2Button.ForeColor = System.Drawing.Color.White;
+            this.round2Button.Location = new System.Drawing.Point(900, 579);
+            this.round2Button.Name = "round2Button";
+            this.round2Button.Size = new System.Drawing.Size(170, 45);
+            this.round2Button.TabIndex = 25;
+            this.round2Button.Text = "ROUND 2";
+            this.round2Button.UseVisualStyleBackColor = false;
+            // 
+            // unlockPicture
+            // 
+            this.unlockPicture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.unlockPicture.Image = global::JCounter.Properties.Resources.lock_open;
+            this.unlockPicture.Location = new System.Drawing.Point(472, 533);
+            this.unlockPicture.Name = "unlockPicture";
+            this.unlockPicture.Size = new System.Drawing.Size(60, 60);
+            this.unlockPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.unlockPicture.TabIndex = 26;
+            this.unlockPicture.TabStop = false;
+            this.unlockPicture.MouseClick += new System.Windows.Forms.MouseEventHandler(this.unlockPicture_MouseClick);
             // 
             // Counter4Teams
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(1449, 763);
+            this.ClientSize = new System.Drawing.Size(1534, 861);
+            this.Controls.Add(this.unlockPicture);
+            this.Controls.Add(this.round2Button);
+            this.Controls.Add(this.logoStartPage);
             this.Controls.Add(this.pointsPanel);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.resetButton);
             this.Controls.Add(this.homePicture3);
             this.Controls.Add(this.team4Score);
             this.Controls.Add(this.team3Score);
@@ -410,12 +463,15 @@ namespace JCounter
             this.Controls.Add(this.team3Counter);
             this.Controls.Add(this.team2Counter);
             this.Controls.Add(this.team1Counter);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Counter4Teams";
             this.Text = "JScore";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Counter4Teams_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.homePicture3)).EndInit();
             this.pointsPanel.ResumeLayout(false);
             this.pointsPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoStartPage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unlockPicture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -444,7 +500,10 @@ namespace JCounter
         private System.Windows.Forms.RadioButton points400;
         private System.Windows.Forms.RadioButton points500;
         private System.Windows.Forms.PictureBox homePicture3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button resetButton;
         private System.Windows.Forms.GroupBox pointsPanel;
+        private System.Windows.Forms.PictureBox logoStartPage;
+        private System.Windows.Forms.Button round2Button;
+        private System.Windows.Forms.PictureBox unlockPicture;
     }
 }
