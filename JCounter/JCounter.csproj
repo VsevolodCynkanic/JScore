@@ -51,6 +51,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Counter4Players2Round.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Counter4Players2Round.Designer.cs">
+      <DependentUpon>Counter4Players2Round.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Counter4Players3Round.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Counter4Players3Round.Designer.cs">
+      <DependentUpon>Counter4Players3Round.cs</DependentUpon>
+    </Compile>
     <Compile Include="Counter4Teams.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +83,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Counter4Players2Round.resx">
+      <DependentUpon>Counter4Players2Round.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Counter4Players3Round.resx">
+      <DependentUpon>Counter4Players3Round.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Counter4Teams.resx">
       <DependentUpon>Counter4Teams.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +125,7 @@
     <Content Include="applogo.ico" />
     <None Include="images\applogo.png" />
     <Content Include="images\home.png" />
+    <Content Include="images\lock.png" />
     <Content Include="images\lock_open.png" />
     <Content Include="images\logo.png" />
   </ItemGroup>

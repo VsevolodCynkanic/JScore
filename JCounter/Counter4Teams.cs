@@ -310,14 +310,19 @@ namespace JCounter
 
         private void Counter4Teams_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Do you want to close the JCounter?", "Confirms", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (e.CloseReason == CloseReason.UserClosing)
             {
-                e.Cancel = false;
-                Application.Exit();
-            }
-            else
-            {
-                e.Cancel = true;
+                DialogResult dialog = MessageBox.Show("Do you want to close the JCounter?", "Confirms", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (dialog == DialogResult.Yes)
+                {
+                    e.Cancel = false;
+                    Application.Exit();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
             }
         }
 
@@ -354,6 +359,15 @@ namespace JCounter
             points[3] = 0;
             team4Score.Text = points[3].ToString();
             points100.Checked = true;
+        }
+
+        private void round2Button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Counter4Players2Round counter4Players2Round = new Counter4Players2Round(team1Counter.Text, team2Counter.Text, team3Counter.Text, team4Counter.Text,
+                team1Score.Text, team2Score.Text, team3Score.Text, team4Score.Text, points);
+            //int[] points = new int [100, ] 
+            counter4Players2Round.Show();
         }
     }
 }

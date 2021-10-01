@@ -28,20 +28,18 @@ namespace JCounter
             team4NameField.Text = "Enter the name";
             team4NameField.ForeColor = Color.Gray;
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void NamingForm_Load(object sender, EventArgs e)
         {
-
+            //this.ActiveControl = homePicture2;
         }
 
         private void team1NameField_Enter(object sender, EventArgs e)
         {
-            if(team1NameField.Text == "Enter the name")
+            if (team1NameField.Text == "Enter the name")
             {
                team1NameField.Text = "";
                team1NameField.ForeColor = Color.Black;
             }
-
         }
 
         private void team1NameField_Leave(object sender, EventArgs e)
@@ -51,7 +49,6 @@ namespace JCounter
                 team1NameField.Text = "Enter the name";
                 team1NameField.ForeColor = Color.Gray;
             }
-                
         }
 
         private void team2NameField_Enter(object sender, EventArgs e)
@@ -134,6 +131,9 @@ namespace JCounter
         {
 
         }
+
+
+
         // DOES NOT WORK
 
         //private void pictureBox1_Move(object sender, EventArgs e)

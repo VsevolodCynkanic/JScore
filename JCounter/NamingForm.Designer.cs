@@ -51,12 +51,11 @@ namespace JCounter
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(148, 147);
+            this.label1.Location = new System.Drawing.Point(179, 150);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(304, 29);
+            this.label1.Size = new System.Drawing.Size(242, 29);
             this.label1.TabIndex = 0;
-            this.label1.Text = "TYPE A NAME OF TEAMS";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Text = "TYPE TEAM NAMES";
             // 
             // label2
             // 
@@ -208,9 +207,13 @@ namespace JCounter
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(600, 606);
+            this.MinimumSize = new System.Drawing.Size(600, 606);
             this.Name = "NamingForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "JScore";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NamingForm_FormClosing);
+            this.Load += new System.EventHandler(this.NamingForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.homePicture2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoStartPage)).EndInit();
             this.ResumeLayout(false);
