@@ -10,20 +10,18 @@ using System.Windows.Forms;
 
 namespace JCounter
 {
-    public partial class Counter4Players3Round : Form
+    public partial class Counter3Players3Round : Form
     {
-        public Counter4Players3Round(string team1name, string team2name, string team3name, string team4name,
-            string team1ScoreR2, string team2ScoreR2, string team3ScoreR2, string team4ScoreR2, int[] points)
+        public Counter3Players3Round(string team1name, string team2name, string team3name,
+            string team1ScoreR2, string team2ScoreR2, string team3ScoreR2, int[] points)
         {
             InitializeComponent();
             team1Counter.Text = team1name;
             team2Counter.Text = team2name;
             team3Counter.Text = team3name;
-            team4Counter.Text = team4name;
             team1ScoreR3.Text = team1ScoreR2;
             team2ScoreR3.Text = team2ScoreR2;
             team3ScoreR3.Text = team3ScoreR2;
-            team4ScoreR3.Text = team4ScoreR2;
             this.points = points;
         }
         int point300 = 300;
@@ -150,45 +148,6 @@ namespace JCounter
             }
         }
 
-        private void plusTeam4_Click(object sender, EventArgs e)
-        {
-            if (points300R3.Checked)
-            {
-                points[3] += point300;
-                team4ScoreR3.Text = points[3].ToString();
-                points300R3.Checked = false;
-                points600R3.Checked = true;
-            }
-            else if (points600R3.Checked)
-            {
-                points[3] += point600;
-                team4ScoreR3.Text = points[3].ToString();
-                points600R3.Checked = false;
-                points900R3.Checked = true;
-            }
-            else if (points900R3.Checked)
-            {
-                points[3] += point900;
-                team4ScoreR3.Text = points[3].ToString();
-                points900R3.Checked = false;
-                points1200R3.Checked = true;
-            }
-            else if (points1200R3.Checked)
-            {
-                points[3] += point1200;
-                team4ScoreR3.Text = points[3].ToString();
-                points1200R3.Checked = false;
-                points1500R3.Checked = true;
-            }
-            else if (points1500R3.Checked)
-            {
-                points[3] += point1500;
-                team4ScoreR3.Text = points[3].ToString();
-                points1500R3.Checked = false;
-                points300R3.Checked = true;
-            }
-        }
-
         private void minusTeam1_Click(object sender, EventArgs e)
         {
             if (points300R3.Checked)
@@ -246,6 +205,7 @@ namespace JCounter
                 team2ScoreR3.Text = points[1].ToString();
             }
         }
+
         private void minusTeam3_Click(object sender, EventArgs e)
         {
             if (points300R3.Checked)
@@ -275,34 +235,6 @@ namespace JCounter
             }
         }
 
-        private void minusTeam4_Click(object sender, EventArgs e)
-        {
-            if (points300R3.Checked)
-            {
-                points[3] -= point300;
-                team4ScoreR3.Text = points[3].ToString();
-            }
-            else if (points600R3.Checked)
-            {
-                points[3] -= point600;
-                team4ScoreR3.Text = points[3].ToString();
-            }
-            else if (points900R3.Checked)
-            {
-                points[3] -= point900;
-                team4ScoreR3.Text = points[3].ToString();
-            }
-            else if (points1200R3.Checked)
-            {
-                points[3] -= point1200;
-                team4ScoreR3.Text = points[3].ToString();
-            }
-            else if (points1500R3.Checked)
-            {
-                points[3] -= point1500;
-                team4ScoreR3.Text = points[3].ToString();
-            }
-        }
         private void homePicture3_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -325,7 +257,7 @@ namespace JCounter
             }
         }
 
-        private void Counter4Players3Round_FormClosing(object sender, FormClosingEventArgs e)
+        private void Counter3Players3Round_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)
             {

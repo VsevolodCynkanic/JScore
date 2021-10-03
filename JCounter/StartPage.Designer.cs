@@ -81,8 +81,7 @@ namespace JCounter
             this.NumberOfTeams.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NumberOfTeams.FormattingEnabled = true;
             this.NumberOfTeams.Items.AddRange(new object[] {
-            "2 (TBC)",
-            "3 (TBC)",
+            "3",
             "4"});
             this.NumberOfTeams.Location = new System.Drawing.Point(316, 338);
             this.NumberOfTeams.Name = "NumberOfTeams";
@@ -108,9 +107,9 @@ namespace JCounter
             this.label3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(161, 163);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(277, 29);
+            this.label3.Size = new System.Drawing.Size(184, 29);
             this.label3.TabIndex = 6;
-            this.label3.Text = "WELCOME TO JSCORE";
+            this.label3.Text = "WELCOME TO ";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
@@ -147,7 +146,6 @@ namespace JCounter
             this.MinimumSize = new System.Drawing.Size(600, 606);
             this.Name = "StartPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "JScore";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StartPage_FormClosing);
             this.Load += new System.EventHandler(this.StartPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logoStartPage)).EndInit();

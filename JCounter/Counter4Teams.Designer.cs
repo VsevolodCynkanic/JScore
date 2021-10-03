@@ -57,6 +57,7 @@ namespace JCounter
             this.unlockPicture = new System.Windows.Forms.PictureBox();
             this.logoStartPage = new System.Windows.Forms.PictureBox();
             this.homePicture3 = new System.Windows.Forms.PictureBox();
+            this.roundNumber = new System.Windows.Forms.TextBox();
             this.pointsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.unlockPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoStartPage)).BeginInit();
@@ -339,9 +340,9 @@ namespace JCounter
             this.round2Button.ForeColor = System.Drawing.Color.White;
             this.round2Button.Location = new System.Drawing.Point(900, 550);
             this.round2Button.Name = "round2Button";
-            this.round2Button.Size = new System.Drawing.Size(170, 45);
+            this.round2Button.Size = new System.Drawing.Size(270, 45);
             this.round2Button.TabIndex = 25;
-            this.round2Button.Text = "ROUND 2";
+            this.round2Button.Text = "GO TO ROUND 2";
             this.round2Button.UseVisualStyleBackColor = false;
             this.round2Button.Click += new System.EventHandler(this.round2Button_Click);
             // 
@@ -417,7 +418,7 @@ namespace JCounter
             this.pointsPanel.Controls.Add(this.points400);
             this.pointsPanel.Controls.Add(this.points300);
             this.pointsPanel.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
-            this.pointsPanel.Location = new System.Drawing.Point(530, 490);
+            this.pointsPanel.Location = new System.Drawing.Point(530, 530);
             this.pointsPanel.Name = "pointsPanel";
             this.pointsPanel.Size = new System.Drawing.Size(130, 270);
             this.pointsPanel.TabIndex = 27;
@@ -458,12 +459,25 @@ namespace JCounter
             this.homePicture3.TabStop = false;
             this.homePicture3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.homePicture3_MouseClick);
             // 
+            // roundNumber
+            // 
+            this.roundNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(82)))));
+            this.roundNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.roundNumber.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
+            this.roundNumber.ForeColor = System.Drawing.Color.Yellow;
+            this.roundNumber.Location = new System.Drawing.Point(116, 22);
+            this.roundNumber.Name = "roundNumber";
+            this.roundNumber.Size = new System.Drawing.Size(146, 36);
+            this.roundNumber.TabIndex = 51;
+            this.roundNumber.Text = "ROUND 1";
+            // 
             // Counter4Teams
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1534, 861);
+            this.Controls.Add(this.roundNumber);
             this.Controls.Add(this.pointsPanel);
             this.Controls.Add(this.unlockPicture);
             this.Controls.Add(this.round2Button);
@@ -489,7 +503,6 @@ namespace JCounter
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1550, 900);
             this.Name = "Counter4Teams";
-            this.Text = "JScore";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Counter4Teams_FormClosing);
             this.pointsPanel.ResumeLayout(false);
@@ -498,6 +511,7 @@ namespace JCounter
             ((System.ComponentModel.ISupportInitialize)(this.logoStartPage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.homePicture3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -530,5 +544,6 @@ namespace JCounter
         private System.Windows.Forms.RadioButton points200;
         private System.Windows.Forms.RadioButton points100;
         private System.Windows.Forms.Panel pointsPanel;
+        private System.Windows.Forms.TextBox roundNumber;
     }
 }

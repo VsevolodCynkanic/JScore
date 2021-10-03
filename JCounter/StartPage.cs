@@ -62,16 +62,6 @@ namespace JCounter
                 MessageBox.Show("Sorry, Jeopardy will be added with the future updates. We are working on it.");
                 return;
             }
-            if (NumberOfTeams.Text == "2 (TBC)")
-            {
-                MessageBox.Show("Sorry, currently the futurues for 2 teams are not implemented. We are working on it.");
-                return;
-            }
-            if (NumberOfTeams.Text == "3 (TBC)")
-            {
-                MessageBox.Show("Sorry, currently the futurues for 3 teams are not implemented. We are working on it.");
-                return;
-            }
             if (TypeOfGame.Text == "")
             {
                 MessageBox.Show("Choose the type of game");
@@ -82,9 +72,19 @@ namespace JCounter
                 MessageBox.Show("Choose the number of teams or participants");
                 return;
             }
-            this.Hide();
-            NamingForm namingForm = new NamingForm();
-            namingForm.Show();
+            if (TypeOfGame.Text == "Xamsa" && NumberOfTeams.Text == "4")
+            {
+                this.Hide();
+                NamingForm namingForm = new NamingForm();
+                namingForm.Show();
+            }
+            if (TypeOfGame.Text == "Xamsa" && NumberOfTeams.Text == "3")
+            {
+                this.Hide();
+                NamingForm3Players namingForm3Players = new NamingForm3Players();
+                namingForm3Players.Show();
+            }
+            
         }
 
         private void StartPage_FormClosing(object sender, FormClosingEventArgs e)

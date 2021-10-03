@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace JCounter
 {
-    public partial class NamingForm : Form
+    public partial class NamingForm3Players : Form
     {
-        public NamingForm()
+        public NamingForm3Players()
         {
             InitializeComponent();
 
@@ -24,13 +24,25 @@ namespace JCounter
 
             team3NameField.Text = "Enter the name";
             team3NameField.ForeColor = Color.Gray;
-
-            team4NameField.Text = "Enter the name";
-            team4NameField.ForeColor = Color.Gray;
         }
-        private void NamingForm_Load(object sender, EventArgs e)
+        private void NamingForm3Players_Load(object sender, EventArgs e)
         {
             //this.ActiveControl = homePicture2;
+        }
+    
+        private void NamingForm3Players_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void homePicture2_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Hide();
+                StartPage startPage = new StartPage();
+                startPage.Show();
+            }
         }
 
         private void team1NameField_Enter(object sender, EventArgs e)
@@ -86,54 +98,11 @@ namespace JCounter
                 team3NameField.ForeColor = Color.Gray;
             }
         }
-
-        private void team4NameField_Enter(object sender, EventArgs e)
-        {
-            if (team4NameField.Text == "Enter the name")
-            {
-                team4NameField.Text = "";
-                team4NameField.ForeColor = Color.Black;
-            }
-        }
-
-        private void team4NameField_Leave(object sender, EventArgs e)
-        {
-            if (team4NameField.Text == "")
-            {
-                team4NameField.Text = "Enter the name";
-                team4NameField.ForeColor = Color.Gray;
-            }
-        }
-
         private void buttonSecondPage_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Counter4Teams counter4Teams = new Counter4Teams(team1NameField.Text, team2NameField.Text, team3NameField.Text, team4NameField.Text);
-            counter4Teams.Show();
+            Counter3Teams counter3Teams = new Counter3Teams(team1NameField.Text, team2NameField.Text, team3NameField.Text);
+            counter3Teams.Show();
         }
-
-        private void NamingForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void homePicture2_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                this.Hide();
-                StartPage startPage = new StartPage();
-                startPage.Show();
-            }
-        }
-
-
-        // DOES NOT WORK
-
-        //private void pictureBox1_Move(object sender, EventArgs e)
-        //{
-        //    ToolTip t = new ToolTip();
-        //    t.SetToolTip(pictureBox1, "Home");
-        //}
     }
 }

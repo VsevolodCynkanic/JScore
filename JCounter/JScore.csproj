@@ -7,7 +7,7 @@
     <ProjectGuid>{A8551514-71AA-4631-9B3A-ABDEF8831F4F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>JCounter</RootNamespace>
-    <AssemblyName>JCounter</AssemblyName>
+    <AssemblyName>JScore</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -51,6 +51,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Counter3Players2Round.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Counter3Players2Round.Designer.cs">
+      <DependentUpon>Counter3Players2Round.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Counter3Players3Round.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Counter3Players3Round.Designer.cs">
+      <DependentUpon>Counter3Players3Round.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Counter3Teams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Counter3Teams.Designer.cs">
+      <DependentUpon>Counter3Teams.cs</DependentUpon>
+    </Compile>
     <Compile Include="Counter4Players2Round.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +93,12 @@
     <Compile Include="NamingForm.Designer.cs">
       <DependentUpon>NamingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NamingForm3Players.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NamingForm3Players.Designer.cs">
+      <DependentUpon>NamingForm3Players.cs</DependentUpon>
+    </Compile>
     <Compile Include="StartPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +107,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Counter3Players2Round.resx">
+      <DependentUpon>Counter3Players2Round.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Counter3Players3Round.resx">
+      <DependentUpon>Counter3Players3Round.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Counter3Teams.resx">
+      <DependentUpon>Counter3Teams.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Counter4Players2Round.resx">
       <DependentUpon>Counter4Players2Round.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NamingForm.resx">
       <DependentUpon>NamingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NamingForm3Players.resx">
+      <DependentUpon>NamingForm3Players.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartPage.resx">
       <DependentUpon>StartPage.cs</DependentUpon>
