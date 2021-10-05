@@ -51,7 +51,7 @@ namespace JCounter
             this.team3Counter = new System.Windows.Forms.Label();
             this.team2Counter = new System.Windows.Forms.Label();
             this.team1Counter = new System.Windows.Forms.Label();
-            this.roundNumber = new System.Windows.Forms.TextBox();
+            this.round = new System.Windows.Forms.Label();
             this.pointsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.unlockPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.homePicture3)).BeginInit();
@@ -355,17 +355,16 @@ namespace JCounter
             this.team1Counter.Text = "TEAM 1";
             this.team1Counter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // roundNumber
+            // round
             // 
-            this.roundNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(82)))));
-            this.roundNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.roundNumber.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
-            this.roundNumber.ForeColor = System.Drawing.Color.Yellow;
-            this.roundNumber.Location = new System.Drawing.Point(116, 22);
-            this.roundNumber.Name = "roundNumber";
-            this.roundNumber.Size = new System.Drawing.Size(146, 36);
-            this.roundNumber.TabIndex = 92;
-            this.roundNumber.Text = "ROUND 3";
+            this.round.AutoSize = true;
+            this.round.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold);
+            this.round.ForeColor = System.Drawing.Color.Yellow;
+            this.round.Location = new System.Drawing.Point(116, 22);
+            this.round.Name = "round";
+            this.round.Size = new System.Drawing.Size(150, 35);
+            this.round.TabIndex = 95;
+            this.round.Text = "ROUND 3";
             // 
             // Counter3Players3Round
             // 
@@ -373,7 +372,7 @@ namespace JCounter
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1534, 861);
-            this.Controls.Add(this.roundNumber);
+            this.Controls.Add(this.round);
             this.Controls.Add(this.pointsPanel);
             this.Controls.Add(this.unlockPicture);
             this.Controls.Add(this.homePicture3);
@@ -429,6 +428,6 @@ namespace JCounter
         private System.Windows.Forms.Label team3Counter;
         private System.Windows.Forms.Label team2Counter;
         private System.Windows.Forms.Label team1Counter;
-        private System.Windows.Forms.TextBox roundNumber;
+        private System.Windows.Forms.Label round;
     }
 }

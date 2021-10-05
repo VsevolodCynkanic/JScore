@@ -35,31 +35,22 @@ namespace JCounter
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void StartPage_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (TypeOfGame.Text == "Jeopardy (TBC)")
+            if (TypeOfGame.Text == "Jeopardy" && NumberOfTeams.Text == "4")
             {
-                MessageBox.Show("Sorry, Jeopardy will be added with the future updates. We are working on it.");
+                this.Hide();
+                NamingFormJeopardy namingFormJeopardy = new NamingFormJeopardy();
+                namingFormJeopardy.Show();
+            }
+            if (TypeOfGame.Text == "Jeopardy" && NumberOfTeams.Text == "3")
+            {
+                MessageBox.Show("Jeopardy is game only for 4 players. Please choose \"four players\".");
                 return;
             }
             if (TypeOfGame.Text == "")

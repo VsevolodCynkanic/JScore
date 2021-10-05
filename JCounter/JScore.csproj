@@ -87,6 +87,12 @@
     <Compile Include="Counter4Teams.Designer.cs">
       <DependentUpon>Counter4Teams.cs</DependentUpon>
     </Compile>
+    <Compile Include="CounterJeopardy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CounterJeopardy.Designer.cs">
+      <DependentUpon>CounterJeopardy.cs</DependentUpon>
+    </Compile>
     <Compile Include="NamingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,12 @@
     </Compile>
     <Compile Include="NamingForm3Players.Designer.cs">
       <DependentUpon>NamingForm3Players.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NamingFormJeopardy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NamingFormJeopardy.Designer.cs">
+      <DependentUpon>NamingFormJeopardy.cs</DependentUpon>
     </Compile>
     <Compile Include="StartPage.cs">
       <SubType>Form</SubType>
@@ -125,11 +137,17 @@
     <EmbeddedResource Include="Counter4Teams.resx">
       <DependentUpon>Counter4Teams.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CounterJeopardy.resx">
+      <DependentUpon>CounterJeopardy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NamingForm.resx">
       <DependentUpon>NamingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NamingForm3Players.resx">
       <DependentUpon>NamingForm3Players.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NamingFormJeopardy.resx">
+      <DependentUpon>NamingFormJeopardy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartPage.resx">
       <DependentUpon>StartPage.cs</DependentUpon>

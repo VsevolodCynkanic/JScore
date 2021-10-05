@@ -47,7 +47,7 @@ namespace JCounter
             this.TypeOfGame.FormattingEnabled = true;
             this.TypeOfGame.Items.AddRange(new object[] {
             "Xamsa",
-            "Jeopardy (TBC)"});
+            "Jeopardy"});
             this.TypeOfGame.Location = new System.Drawing.Point(316, 255);
             this.TypeOfGame.Name = "TypeOfGame";
             this.TypeOfGame.Size = new System.Drawing.Size(162, 27);
@@ -62,7 +62,6 @@ namespace JCounter
             this.label1.Size = new System.Drawing.Size(120, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "TYPE OF GAME";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -73,7 +72,6 @@ namespace JCounter
             this.label2.Size = new System.Drawing.Size(152, 19);
             this.label2.TabIndex = 4;
             this.label2.Text = "NUMBER OF TEAMS";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // NumberOfTeams
             // 
@@ -107,11 +105,10 @@ namespace JCounter
             this.label3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(161, 163);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(184, 29);
+            this.label3.Size = new System.Drawing.Size(277, 29);
             this.label3.TabIndex = 6;
-            this.label3.Text = "WELCOME TO ";
+            this.label3.Text = "WELCOME TO JSCORE";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // logoStartPage
             // 
@@ -137,7 +134,7 @@ namespace JCounter
             this.Controls.Add(this.NumberOfTeams);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TypeOfGame);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -146,6 +143,7 @@ namespace JCounter
             this.MinimumSize = new System.Drawing.Size(600, 606);
             this.Name = "StartPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "JScore";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StartPage_FormClosing);
             this.Load += new System.EventHandler(this.StartPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logoStartPage)).EndInit();
